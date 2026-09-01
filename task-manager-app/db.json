@@ -1,0 +1,905 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "title": "React Router のルート整理",
+      "description": "画面遷移用のルート定義を整理する",
+      "category": "front_end",
+      "priority": "HIGH",
+      "status": "INITIATION",
+      "dueDate": "2026-07-02"
+    },
+    {
+      "id": "2",
+      "title": "例外ハンドリング実装",
+      "description": "ControllerAdviceで共通例外処理を追加する",
+      "category": "back_end",
+      "priority": "MIDDLE",
+      "status": "PENDING",
+      "dueDate": "2026-07-19"
+    },
+    {
+      "id": "3",
+      "title": "環境変数整理",
+      "description": "開発環境と本番環境の設定値を分離する",
+      "category": "infra",
+      "priority": "LOW",
+      "status": "COMPLETED",
+      "dueDate": "2026-08-05"
+    },
+    {
+      "id": "4",
+      "title": "フロントエンドテスト追加",
+      "description": "主要コンポーネントの表示テストを追加する",
+      "category": "testing",
+      "priority": "NONE",
+      "status": "IN_PROGRESS",
+      "dueDate": "2026-08-22"
+    },
+    {
+      "id": "5",
+      "title": "設計メモ整理",
+      "description": "実装時の判断理由をドキュメントに残す",
+      "category": "document",
+      "priority": "HIGH",
+      "status": "CANCELED",
+      "dueDate": "2026-09-08"
+    },
+    {
+      "id": "6",
+      "title": "プルリクエストレビュー",
+      "description": "提出された変更内容を確認してコメントする",
+      "category": "review",
+      "priority": "MIDDLE",
+      "status": "INITIATION",
+      "dueDate": "2026-09-25"
+    },
+    {
+      "id": "7",
+      "title": "DBテーブル設計",
+      "description": "タスクとカテゴリーのテーブル構造を設計する",
+      "category": "design",
+      "priority": "LOW",
+      "status": "PENDING",
+      "dueDate": "2026-10-12"
+    },
+    {
+      "id": "8",
+      "title": "進捗確認ミーティング",
+      "description": "現在の進捗と課題を共有する",
+      "category": "meeting",
+      "priority": "NONE",
+      "status": "COMPLETED",
+      "dueDate": "2026-10-29"
+    },
+    {
+      "id": "9",
+      "title": "一覧ページのレスポンシブ対応 #2",
+      "description": "スマホ表示でも崩れないようにレイアウトを調整する",
+      "category": "front_end",
+      "priority": "HIGH",
+      "status": "PENDING",
+      "dueDate": "2026-07-17"
+    },
+    {
+      "id": "10",
+      "title": "Spring Boot REST API作成 #2",
+      "description": "タスク管理用のCRUD APIを実装する",
+      "category": "back_end",
+      "priority": "MIDDLE",
+      "status": "COMPLETED",
+      "dueDate": "2026-08-03"
+    },
+    {
+      "id": "11",
+      "title": "CI設定追加 #2",
+      "description": "GitHub Actionsでテストを自動実行する",
+      "category": "infra",
+      "priority": "LOW",
+      "status": "IN_PROGRESS",
+      "dueDate": "2026-08-20"
+    },
+    {
+      "id": "12",
+      "title": "境界値テスト追加 #2",
+      "description": "入力値の境界値パターンをテストする",
+      "category": "testing",
+      "priority": "NONE",
+      "status": "CANCELED",
+      "dueDate": "2026-09-06"
+    },
+    {
+      "id": "13",
+      "title": "操作手順書作成 #2",
+      "description": "ユーザー向けの操作手順をまとめる",
+      "category": "document",
+      "priority": "HIGH",
+      "status": "INITIATION",
+      "dueDate": "2026-09-23"
+    },
+    {
+      "id": "14",
+      "title": "設計レビュー #2",
+      "description": "責務分離と依存関係に問題がないか確認する",
+      "category": "review",
+      "priority": "MIDDLE",
+      "status": "PENDING",
+      "dueDate": "2026-10-10"
+    },
+    {
+      "id": "15",
+      "title": "タスク管理画面設計 #2",
+      "description": "一覧画面の構成と操作フローを設計する",
+      "category": "design",
+      "priority": "LOW",
+      "status": "COMPLETED",
+      "dueDate": "2026-10-27"
+    },
+    {
+      "id": "16",
+      "title": "スプリント計画会議 #2",
+      "description": "次スプリントで対応するタスクを決める",
+      "category": "meeting",
+      "priority": "NONE",
+      "status": "IN_PROGRESS",
+      "dueDate": "2026-07-15"
+    },
+    {
+      "id": "17",
+      "title": "検索フォーム作成 #3",
+      "description": "タイトルとカテゴリーで検索できるフォームを作成する",
+      "category": "front_end",
+      "priority": "HIGH",
+      "status": "COMPLETED",
+      "dueDate": "2026-08-01"
+    },
+    {
+      "id": "18",
+      "title": "トランザクション処理確認 #3",
+      "description": "更新処理にTransactionalを適用して動作確認する",
+      "category": "back_end",
+      "priority": "MIDDLE",
+      "status": "IN_PROGRESS",
+      "dueDate": "2026-08-18"
+    },
+    {
+      "id": "19",
+      "title": "Docker環境作成 #3",
+      "description": "開発環境をDocker Composeで起動できるようにする",
+      "category": "infra",
+      "priority": "LOW",
+      "status": "CANCELED",
+      "dueDate": "2026-09-04"
+    },
+    {
+      "id": "20",
+      "title": "Controller結合テスト #3",
+      "description": "MockMvcでAPIの結合テストを作成する",
+      "category": "testing",
+      "priority": "NONE",
+      "status": "INITIATION",
+      "dueDate": "2026-09-21"
+    },
+    {
+      "id": "21",
+      "title": "ER図更新 #3",
+      "description": "テーブル変更に合わせてER図を修正する",
+      "category": "document",
+      "priority": "HIGH",
+      "status": "PENDING",
+      "dueDate": "2026-10-08"
+    },
+    {
+      "id": "22",
+      "title": "テストコードレビュー #3",
+      "description": "テストケースの不足や重複を確認する",
+      "category": "review",
+      "priority": "MIDDLE",
+      "status": "COMPLETED",
+      "dueDate": "2026-10-25"
+    },
+    {
+      "id": "23",
+      "title": "エラー設計 #3",
+      "description": "業務エラーとシステムエラーの扱いを整理する",
+      "category": "design",
+      "priority": "LOW",
+      "status": "IN_PROGRESS",
+      "dueDate": "2026-07-13"
+    },
+    {
+      "id": "24",
+      "title": "要件定義会議 #3",
+      "description": "必要な機能と優先順位をチームで確認する",
+      "category": "meeting",
+      "priority": "NONE",
+      "status": "CANCELED",
+      "dueDate": "2026-07-30"
+    },
+    {
+      "id": "25",
+      "title": "タスクカードUI調整 #4",
+      "description": "shadcn/ui を使ってカード表示を整える",
+      "category": "front_end",
+      "priority": "HIGH",
+      "status": "IN_PROGRESS",
+      "dueDate": "2026-08-16"
+    },
+    {
+      "id": "26",
+      "title": "バリデーション追加 #4",
+      "description": "リクエストDTOに入力値検証を追加する",
+      "category": "back_end",
+      "priority": "MIDDLE",
+      "status": "CANCELED",
+      "dueDate": "2026-09-02"
+    },
+    {
+      "id": "27",
+      "title": "デプロイ手順確認 #4",
+      "description": "本番環境へのデプロイ手順を確認する",
+      "category": "infra",
+      "priority": "LOW",
+      "status": "INITIATION",
+      "dueDate": "2026-09-19"
+    },
+    {
+      "id": "28",
+      "title": "Service単体テスト作成 #4",
+      "description": "Mockitoを使ってService層のテストを追加する",
+      "category": "testing",
+      "priority": "NONE",
+      "status": "PENDING",
+      "dueDate": "2026-10-06"
+    },
+    {
+      "id": "29",
+      "title": "API仕様書作成 #4",
+      "description": "エンドポイントとレスポンス例をまとめる",
+      "category": "document",
+      "priority": "HIGH",
+      "status": "COMPLETED",
+      "dueDate": "2026-10-23"
+    },
+    {
+      "id": "30",
+      "title": "SQLレビュー #4",
+      "description": "検索クエリの可読性と性能を確認する",
+      "category": "review",
+      "priority": "MIDDLE",
+      "status": "IN_PROGRESS",
+      "dueDate": "2026-07-11"
+    },
+    {
+      "id": "31",
+      "title": "権限設計 #4",
+      "description": "ユーザー権限ごとの操作範囲を決める",
+      "category": "design",
+      "priority": "LOW",
+      "status": "CANCELED",
+      "dueDate": "2026-07-28"
+    },
+    {
+      "id": "32",
+      "title": "振り返り会議 #4",
+      "description": "今回の開発で良かった点と改善点を整理する",
+      "category": "meeting",
+      "priority": "NONE",
+      "status": "INITIATION",
+      "dueDate": "2026-08-14"
+    },
+    {
+      "id": "33",
+      "title": "フォームバリデーション実装 #5",
+      "description": "React Hook Form と Zod で入力チェックを実装する",
+      "category": "front_end",
+      "priority": "HIGH",
+      "status": "CANCELED",
+      "dueDate": "2026-08-31"
+    },
+    {
+      "id": "34",
+      "title": "DTO変換処理作成 #5",
+      "description": "EntityとResponse DTOの変換処理を実装する",
+      "category": "back_end",
+      "priority": "MIDDLE",
+      "status": "INITIATION",
+      "dueDate": "2026-09-17"
+    },
+    {
+      "id": "35",
+      "title": "ログ設定見直し #5",
+      "description": "アプリケーションログの出力レベルを整理する",
+      "category": "infra",
+      "priority": "LOW",
+      "status": "PENDING",
+      "dueDate": "2026-10-04"
+    },
+    {
+      "id": "36",
+      "title": "回帰テスト実施 #5",
+      "description": "修正済み機能に影響がないか確認する",
+      "category": "testing",
+      "priority": "NONE",
+      "status": "COMPLETED",
+      "dueDate": "2026-10-21"
+    },
+    {
+      "id": "37",
+      "title": "README更新 #5",
+      "description": "起動手順と使用技術をREADMEに追記する",
+      "category": "document",
+      "priority": "HIGH",
+      "status": "IN_PROGRESS",
+      "dueDate": "2026-07-09"
+    },
+    {
+      "id": "38",
+      "title": "後輩のコードレビュー #5",
+      "description": "実装された機能のコード品質を確認する",
+      "category": "review",
+      "priority": "MIDDLE",
+      "status": "CANCELED",
+      "dueDate": "2026-07-26"
+    },
+    {
+      "id": "39",
+      "title": "API設計 #5",
+      "description": "REST APIのURLとHTTPメソッドを整理する",
+      "category": "design",
+      "priority": "LOW",
+      "status": "INITIATION",
+      "dueDate": "2026-08-12"
+    },
+    {
+      "id": "40",
+      "title": "リリース判定会議 #5",
+      "description": "リリース可能な状態か最終確認する",
+      "category": "meeting",
+      "priority": "NONE",
+      "status": "PENDING",
+      "dueDate": "2026-08-29"
+    },
+    {
+      "id": "41",
+      "title": "React Router のルート整理 #6",
+      "description": "画面遷移用のルート定義を整理する",
+      "category": "front_end",
+      "priority": "HIGH",
+      "status": "INITIATION",
+      "dueDate": "2026-09-15"
+    },
+    {
+      "id": "42",
+      "title": "例外ハンドリング実装 #6",
+      "description": "ControllerAdviceで共通例外処理を追加する",
+      "category": "back_end",
+      "priority": "MIDDLE",
+      "status": "PENDING",
+      "dueDate": "2026-10-02"
+    },
+    {
+      "id": "43",
+      "title": "環境変数整理 #6",
+      "description": "開発環境と本番環境の設定値を分離する",
+      "category": "infra",
+      "priority": "LOW",
+      "status": "COMPLETED",
+      "dueDate": "2026-10-19"
+    },
+    {
+      "id": "44",
+      "title": "フロントエンドテスト追加 #6",
+      "description": "主要コンポーネントの表示テストを追加する",
+      "category": "testing",
+      "priority": "NONE",
+      "status": "IN_PROGRESS",
+      "dueDate": "2026-07-07"
+    },
+    {
+      "id": "45",
+      "title": "設計メモ整理 #6",
+      "description": "実装時の判断理由をドキュメントに残す",
+      "category": "document",
+      "priority": "HIGH",
+      "status": "CANCELED",
+      "dueDate": "2026-07-24"
+    },
+    {
+      "id": "46",
+      "title": "プルリクエストレビュー #6",
+      "description": "提出された変更内容を確認してコメントする",
+      "category": "review",
+      "priority": "MIDDLE",
+      "status": "INITIATION",
+      "dueDate": "2026-08-10"
+    },
+    {
+      "id": "47",
+      "title": "DBテーブル設計 #6",
+      "description": "タスクとカテゴリーのテーブル構造を設計する",
+      "category": "design",
+      "priority": "LOW",
+      "status": "PENDING",
+      "dueDate": "2026-08-27"
+    },
+    {
+      "id": "48",
+      "title": "進捗確認ミーティング #6",
+      "description": "現在の進捗と課題を共有する",
+      "category": "meeting",
+      "priority": "NONE",
+      "status": "COMPLETED",
+      "dueDate": "2026-09-13"
+    },
+    {
+      "id": "49",
+      "title": "一覧ページのレスポンシブ対応 #7",
+      "description": "スマホ表示でも崩れないようにレイアウトを調整する",
+      "category": "front_end",
+      "priority": "HIGH",
+      "status": "PENDING",
+      "dueDate": "2026-09-30"
+    },
+    {
+      "id": "50",
+      "title": "Spring Boot REST API作成 #7",
+      "description": "タスク管理用のCRUD APIを実装する",
+      "category": "back_end",
+      "priority": "MIDDLE",
+      "status": "COMPLETED",
+      "dueDate": "2026-10-17"
+    },
+    {
+      "id": "51",
+      "title": "CI設定追加 #7",
+      "description": "GitHub Actionsでテストを自動実行する",
+      "category": "infra",
+      "priority": "LOW",
+      "status": "IN_PROGRESS",
+      "dueDate": "2026-07-05"
+    },
+    {
+      "id": "52",
+      "title": "境界値テスト追加 #7",
+      "description": "入力値の境界値パターンをテストする",
+      "category": "testing",
+      "priority": "NONE",
+      "status": "CANCELED",
+      "dueDate": "2026-07-22"
+    },
+    {
+      "id": "53",
+      "title": "操作手順書作成 #7",
+      "description": "ユーザー向けの操作手順をまとめる",
+      "category": "document",
+      "priority": "HIGH",
+      "status": "INITIATION",
+      "dueDate": "2026-08-08"
+    },
+    {
+      "id": "54",
+      "title": "設計レビュー #7",
+      "description": "責務分離と依存関係に問題がないか確認する",
+      "category": "review",
+      "priority": "MIDDLE",
+      "status": "PENDING",
+      "dueDate": "2026-08-25"
+    },
+    {
+      "id": "55",
+      "title": "タスク管理画面設計 #7",
+      "description": "一覧画面の構成と操作フローを設計する",
+      "category": "design",
+      "priority": "LOW",
+      "status": "COMPLETED",
+      "dueDate": "2026-09-11"
+    },
+    {
+      "id": "56",
+      "title": "スプリント計画会議 #7",
+      "description": "次スプリントで対応するタスクを決める",
+      "category": "meeting",
+      "priority": "NONE",
+      "status": "IN_PROGRESS",
+      "dueDate": "2026-09-28"
+    },
+    {
+      "id": "57",
+      "title": "検索フォーム作成 #8",
+      "description": "タイトルとカテゴリーで検索できるフォームを作成する",
+      "category": "front_end",
+      "priority": "HIGH",
+      "status": "COMPLETED",
+      "dueDate": "2026-10-15"
+    },
+    {
+      "id": "58",
+      "title": "トランザクション処理確認 #8",
+      "description": "更新処理にTransactionalを適用して動作確認する",
+      "category": "back_end",
+      "priority": "MIDDLE",
+      "status": "IN_PROGRESS",
+      "dueDate": "2026-07-03"
+    },
+    {
+      "id": "59",
+      "title": "Docker環境作成 #8",
+      "description": "開発環境をDocker Composeで起動できるようにする",
+      "category": "infra",
+      "priority": "LOW",
+      "status": "CANCELED",
+      "dueDate": "2026-07-20"
+    },
+    {
+      "id": "60",
+      "title": "Controller結合テスト #8",
+      "description": "MockMvcでAPIの結合テストを作成する",
+      "category": "testing",
+      "priority": "NONE",
+      "status": "INITIATION",
+      "dueDate": "2026-08-06"
+    },
+    {
+      "id": "61",
+      "title": "ER図更新 #8",
+      "description": "テーブル変更に合わせてER図を修正する",
+      "category": "document",
+      "priority": "HIGH",
+      "status": "PENDING",
+      "dueDate": "2026-08-23"
+    },
+    {
+      "id": "62",
+      "title": "テストコードレビュー #8",
+      "description": "テストケースの不足や重複を確認する",
+      "category": "review",
+      "priority": "MIDDLE",
+      "status": "COMPLETED",
+      "dueDate": "2026-09-09"
+    },
+    {
+      "id": "63",
+      "title": "エラー設計 #8",
+      "description": "業務エラーとシステムエラーの扱いを整理する",
+      "category": "design",
+      "priority": "LOW",
+      "status": "IN_PROGRESS",
+      "dueDate": "2026-09-26"
+    },
+    {
+      "id": "64",
+      "title": "要件定義会議 #8",
+      "description": "必要な機能と優先順位をチームで確認する",
+      "category": "meeting",
+      "priority": "NONE",
+      "status": "CANCELED",
+      "dueDate": "2026-10-13"
+    },
+    {
+      "id": "65",
+      "title": "タスクカードUI調整 #9",
+      "description": "shadcn/ui を使ってカード表示を整える",
+      "category": "front_end",
+      "priority": "HIGH",
+      "status": "IN_PROGRESS",
+      "dueDate": "2026-10-30"
+    },
+    {
+      "id": "66",
+      "title": "バリデーション追加 #9",
+      "description": "リクエストDTOに入力値検証を追加する",
+      "category": "back_end",
+      "priority": "MIDDLE",
+      "status": "CANCELED",
+      "dueDate": "2026-07-18"
+    },
+    {
+      "id": "67",
+      "title": "デプロイ手順確認 #9",
+      "description": "本番環境へのデプロイ手順を確認する",
+      "category": "infra",
+      "priority": "LOW",
+      "status": "INITIATION",
+      "dueDate": "2026-08-04"
+    },
+    {
+      "id": "68",
+      "title": "Service単体テスト作成 #9",
+      "description": "Mockitoを使ってService層のテストを追加する",
+      "category": "testing",
+      "priority": "NONE",
+      "status": "PENDING",
+      "dueDate": "2026-08-21"
+    },
+    {
+      "id": "69",
+      "title": "API仕様書作成 #9",
+      "description": "エンドポイントとレスポンス例をまとめる",
+      "category": "document",
+      "priority": "HIGH",
+      "status": "COMPLETED",
+      "dueDate": "2026-09-07"
+    },
+    {
+      "id": "70",
+      "title": "SQLレビュー #9",
+      "description": "検索クエリの可読性と性能を確認する",
+      "category": "review",
+      "priority": "MIDDLE",
+      "status": "IN_PROGRESS",
+      "dueDate": "2026-09-24"
+    },
+    {
+      "id": "71",
+      "title": "権限設計 #9",
+      "description": "ユーザー権限ごとの操作範囲を決める",
+      "category": "design",
+      "priority": "LOW",
+      "status": "CANCELED",
+      "dueDate": "2026-10-11"
+    },
+    {
+      "id": "72",
+      "title": "振り返り会議 #9",
+      "description": "今回の開発で良かった点と改善点を整理する",
+      "category": "meeting",
+      "priority": "NONE",
+      "status": "INITIATION",
+      "dueDate": "2026-10-28"
+    },
+    {
+      "id": "73",
+      "title": "フォームバリデーション実装 #10",
+      "description": "React Hook Form と Zod で入力チェックを実装する",
+      "category": "front_end",
+      "priority": "HIGH",
+      "status": "CANCELED",
+      "dueDate": "2026-07-16"
+    },
+    {
+      "id": "74",
+      "title": "DTO変換処理作成 #10",
+      "description": "EntityとResponse DTOの変換処理を実装する",
+      "category": "back_end",
+      "priority": "MIDDLE",
+      "status": "INITIATION",
+      "dueDate": "2026-08-02"
+    },
+    {
+      "id": "75",
+      "title": "ログ設定見直し #10",
+      "description": "アプリケーションログの出力レベルを整理する",
+      "category": "infra",
+      "priority": "LOW",
+      "status": "PENDING",
+      "dueDate": "2026-08-19"
+    },
+    {
+      "id": "76",
+      "title": "回帰テスト実施 #10",
+      "description": "修正済み機能に影響がないか確認する",
+      "category": "testing",
+      "priority": "NONE",
+      "status": "COMPLETED",
+      "dueDate": "2026-09-05"
+    },
+    {
+      "id": "77",
+      "title": "README更新 #10",
+      "description": "起動手順と使用技術をREADMEに追記する",
+      "category": "document",
+      "priority": "HIGH",
+      "status": "IN_PROGRESS",
+      "dueDate": "2026-09-22"
+    },
+    {
+      "id": "78",
+      "title": "後輩のコードレビュー #10",
+      "description": "実装された機能のコード品質を確認する",
+      "category": "review",
+      "priority": "MIDDLE",
+      "status": "CANCELED",
+      "dueDate": "2026-10-09"
+    },
+    {
+      "id": "79",
+      "title": "API設計 #10",
+      "description": "REST APIのURLとHTTPメソッドを整理する",
+      "category": "design",
+      "priority": "LOW",
+      "status": "INITIATION",
+      "dueDate": "2026-10-26"
+    },
+    {
+      "id": "80",
+      "title": "リリース判定会議 #10",
+      "description": "リリース可能な状態か最終確認する",
+      "category": "meeting",
+      "priority": "NONE",
+      "status": "PENDING",
+      "dueDate": "2026-07-14"
+    },
+    {
+      "id": "81",
+      "title": "React Router のルート整理 #11",
+      "description": "画面遷移用のルート定義を整理する",
+      "category": "front_end",
+      "priority": "HIGH",
+      "status": "INITIATION",
+      "dueDate": "2026-07-31"
+    },
+    {
+      "id": "82",
+      "title": "例外ハンドリング実装 #11",
+      "description": "ControllerAdviceで共通例外処理を追加する",
+      "category": "back_end",
+      "priority": "MIDDLE",
+      "status": "PENDING",
+      "dueDate": "2026-08-17"
+    },
+    {
+      "id": "83",
+      "title": "環境変数整理 #11",
+      "description": "開発環境と本番環境の設定値を分離する",
+      "category": "infra",
+      "priority": "LOW",
+      "status": "COMPLETED",
+      "dueDate": "2026-09-03"
+    },
+    {
+      "id": "84",
+      "title": "フロントエンドテスト追加 #11",
+      "description": "主要コンポーネントの表示テストを追加する",
+      "category": "testing",
+      "priority": "NONE",
+      "status": "IN_PROGRESS",
+      "dueDate": "2026-09-20"
+    },
+    {
+      "id": "85",
+      "title": "設計メモ整理 #11",
+      "description": "実装時の判断理由をドキュメントに残す",
+      "category": "document",
+      "priority": "HIGH",
+      "status": "CANCELED",
+      "dueDate": "2026-10-07"
+    },
+    {
+      "id": "86",
+      "title": "プルリクエストレビュー #11",
+      "description": "提出された変更内容を確認してコメントする",
+      "category": "review",
+      "priority": "MIDDLE",
+      "status": "INITIATION",
+      "dueDate": "2026-10-24"
+    },
+    {
+      "id": "87",
+      "title": "DBテーブル設計 #11",
+      "description": "タスクとカテゴリーのテーブル構造を設計する",
+      "category": "design",
+      "priority": "LOW",
+      "status": "PENDING",
+      "dueDate": "2026-07-12"
+    },
+    {
+      "id": "88",
+      "title": "進捗確認ミーティング #11",
+      "description": "現在の進捗と課題を共有する",
+      "category": "meeting",
+      "priority": "NONE",
+      "status": "COMPLETED",
+      "dueDate": "2026-07-29"
+    },
+    {
+      "id": "89",
+      "title": "一覧ページのレスポンシブ対応 #12",
+      "description": "スマホ表示でも崩れないようにレイアウトを調整する",
+      "category": "front_end",
+      "priority": "HIGH",
+      "status": "PENDING",
+      "dueDate": "2026-08-15"
+    },
+    {
+      "id": "90",
+      "title": "Spring Boot REST API作成 #12",
+      "description": "タスク管理用のCRUD APIを実装する",
+      "category": "back_end",
+      "priority": "MIDDLE",
+      "status": "COMPLETED",
+      "dueDate": "2026-09-01"
+    },
+    {
+      "id": "91",
+      "title": "CI設定追加 #12",
+      "description": "GitHub Actionsでテストを自動実行する",
+      "category": "infra",
+      "priority": "LOW",
+      "status": "IN_PROGRESS",
+      "dueDate": "2026-09-18"
+    },
+    {
+      "id": "92",
+      "title": "境界値テスト追加 #12",
+      "description": "入力値の境界値パターンをテストする",
+      "category": "testing",
+      "priority": "NONE",
+      "status": "CANCELED",
+      "dueDate": "2026-10-05"
+    },
+    {
+      "id": "93",
+      "title": "操作手順書作成 #12",
+      "description": "ユーザー向けの操作手順をまとめる",
+      "category": "document",
+      "priority": "HIGH",
+      "status": "INITIATION",
+      "dueDate": "2026-10-22"
+    },
+    {
+      "id": "94",
+      "title": "設計レビュー #12",
+      "description": "責務分離と依存関係に問題がないか確認する",
+      "category": "review",
+      "priority": "MIDDLE",
+      "status": "PENDING",
+      "dueDate": "2026-07-10"
+    },
+    {
+      "id": "95",
+      "title": "タスク管理画面設計 #12",
+      "description": "一覧画面の構成と操作フローを設計する",
+      "category": "design",
+      "priority": "LOW",
+      "status": "COMPLETED",
+      "dueDate": "2026-07-27"
+    },
+    {
+      "id": "96",
+      "title": "スプリント計画会議 #12",
+      "description": "次スプリントで対応するタスクを決める",
+      "category": "meeting",
+      "priority": "NONE",
+      "status": "IN_PROGRESS",
+      "dueDate": "2026-08-13"
+    },
+    {
+      "id": "97",
+      "title": "検索フォーム作成 #13",
+      "description": "タイトルとカテゴリーで検索できるフォームを作成する",
+      "category": "front_end",
+      "priority": "HIGH",
+      "status": "COMPLETED",
+      "dueDate": "2026-08-30"
+    },
+    {
+      "id": "98",
+      "title": "トランザクション処理確認 #13",
+      "description": "更新処理にTransactionalを適用して動作確認する",
+      "category": "back_end",
+      "priority": "MIDDLE",
+      "status": "IN_PROGRESS",
+      "dueDate": "2026-09-16"
+    },
+    {
+      "id": "99",
+      "title": "Docker環境作成 #13",
+      "description": "開発環境をDocker Composeで起動できるようにする",
+      "category": "infra",
+      "priority": "LOW",
+      "status": "CANCELED",
+      "dueDate": "2026-10-03"
+    },
+    {
+      "id": "100",
+      "title": "Controller結合テスト #13",
+      "description": "MockMvcでAPIの結合テストを作成する",
+      "category": "testing",
+      "priority": "NONE",
+      "status": "INITIATION",
+      "dueDate": "2026-10-20"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
