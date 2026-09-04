@@ -1,5 +1,5 @@
 import type { Task, TaskSearchParams } from "../../types/tasks";
-import type { TaskInput } from "../validations/task";
+import type { PatchTaskInput, TaskInput } from "../validations/task";
 
 const VITE_API_BASE_URL = "http://localhost:3001/tasks";
 
@@ -87,7 +87,7 @@ export const updateTask = async (
 };
 export const patchTask = async (
   id: string,
-  request: TaskInput,
+  request: PatchTaskInput,
 ): Promise<Task> => {
   const response = await fetch(`${VITE_API_BASE_URL}/${id}`, {
     method: "PATCH",

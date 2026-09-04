@@ -33,6 +33,8 @@ import {
   type TaskStatus,
 } from "../../lib/validations/task";
 import { Button } from "../../components/ui/button";
+import { Switch } from "../../components/ui/switch";
+import { isExpiredTask } from "../../lib/task/expiredTask";
 const categoryStatusItem = [
   { label: "全て", value: "ALL" },
   ...categoryItems,
@@ -48,6 +50,7 @@ const priorityItems = [
 
 const TaskListPage = () => {
   const [title, setTitle] = useState("");
+  const [expired, setExpired] = useState(false);
   const debouncedTitle = useDebounce(title, 500);
   const [searchParams, setSearchParams] = useState<TaskSearchParams>({
     title: "",
@@ -97,6 +100,13 @@ const TaskListPage = () => {
       status: undefined,
       priority: undefined,
     });
+  };
+
+  const filterExpiredTasks = () => {
+    if (!expired) {
+      return tasks?.filter((task) => !isExpiredTask(task));
+    }
+    return tasks;
   };
 
   return (
@@ -180,6 +190,10 @@ const TaskListPage = () => {
             </SelectGroup>
           </SelectContent>
         </Select>
+        <div className="flex gap-2 items-center">
+          <Label>期限切れ表示</Label>
+          <Switch checked={expired} onCheckedChange={setExpired} />
+        </div>
         <Label>ソート</Label>
         <Select
           items={taskSortItems}
@@ -204,9 +218,9 @@ const TaskListPage = () => {
           検索条件リセット
         </Button>
       </div>
-      <div className="flex gap-4 mt-4">
-        {tasks?.length === 0 && <div>タスクがありません</div>}
-        {tasks?.map((task) => {
+      <div className="flex flex-wrap gap-4 mt-4">
+        {filterExpiredTasks()?.length === 0 && <div>タスクがありません</div>}
+        {filterExpiredTasks()?.map((task) => {
           return <TaskCard key={task.id} task={task} isEdit={true} />;
         })}
       </div>

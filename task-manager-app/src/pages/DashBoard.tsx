@@ -17,6 +17,7 @@ const DashBoard = () => {
     expired,
   );
   const { data: lowTasks } = useTasksByPriority("LOW", completed, expired);
+  const { data: noneTasks } = useTasksByPriority("NONE", completed, expired);
   if (!tasks) return <div>データの取得に失敗しました。</div>;
   const aggreateTaskFunc = taskStatistics(tasks);
 
@@ -41,12 +42,12 @@ const DashBoard = () => {
         </div>
       </div>
 
-      <div className="grid border grid-cols-3 gap-4">
+      <div className="grid border grid-cols-4 gap-4">
         <section className="flex flex-col gap-2 border">
-          <h2 className="flex flex-col text-center bg-red-400 text-white rounded-2xl py-1">
+          <h2 className="flex flex-col  text-center bg-red-400 text-white rounded-2xl py-1">
             高:{highTasks?.length}
           </h2>
-          <div className="flex flex-col bg-red-200 p-4 items-center">
+          <div className="flex flex-col gap-2 bg-red-200 p-4 items-center">
             {highTasks?.map((task) => (
               <TaskCard task={task} isEdit={false} isClick={false} />
             ))}
@@ -56,7 +57,7 @@ const DashBoard = () => {
           <h2 className="text-center bg-yellow-300 p-4 text-white rounded-2xl py-1">
             中:{middleTasks?.length}
           </h2>
-          <div className="flex flex-col items-center bg-yellow-200 p-4">
+          <div className="flex flex-col gap-2 items-center bg-yellow-200 p-4">
             {middleTasks?.map((task) => (
               <TaskCard task={task} isEdit={false} isClick={false} />
             ))}
@@ -66,8 +67,18 @@ const DashBoard = () => {
           <h2 className="text-center bg-green-300 text-white rounded-2xl py-1">
             低:{lowTasks?.length}
           </h2>
-          <div className="flex flex-col bg-green-200 p-4 items-center">
+          <div className="flex flex-col gap-2 bg-green-200 p-4 items-center">
             {lowTasks?.map((task) => (
+              <TaskCard task={task} isEdit={false} isClick={false} />
+            ))}
+          </div>
+        </section>
+        <section className="flex flex-col gap-2 border">
+          <h2 className="text-center bg-gray-300 text-white rounded-2xl py-1">
+            なし:{noneTasks?.length}
+          </h2>
+          <div className="flex flex-col gap-2 bg-gray-200-200 p-4 items-center">
+            {noneTasks?.map((task) => (
               <TaskCard task={task} isEdit={false} isClick={false} />
             ))}
           </div>

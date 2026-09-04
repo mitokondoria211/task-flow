@@ -1,5 +1,5 @@
 import type { Task } from "../../types/tasks";
-import { expiredTask } from "./expiredTask";
+import { isExpiredTask } from "./expiredTask";
 
 export const allTasksCount = (tasks: Task[]) => {
   return tasks.length;
@@ -15,7 +15,7 @@ export const completedTasksCount = (tasks: Task[]) => {
   return filtered.length;
 };
 export const expiredTasksCount = (tasks: Task[]) => {
-  const filtered = tasks.filter((task) => expiredTask(task));
+  const filtered = tasks.filter((task) => isExpiredTask(task));
   return filtered.length;
 };
 

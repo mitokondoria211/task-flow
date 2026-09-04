@@ -7,7 +7,8 @@
       "category": "front_end",
       "priority": "HIGH",
       "status": "INITIATION",
-      "dueDate": "2026-07-02"
+      "dueDate": "2026-07-02",
+      "priorityNumber": 3
     },
     {
       "id": "2",
@@ -16,7 +17,8 @@
       "category": "back_end",
       "priority": "MIDDLE",
       "status": "PENDING",
-      "dueDate": "2026-07-19"
+      "dueDate": "2026-07-19",
+      "priorityNumber": 2
     },
     {
       "id": "3",
@@ -25,7 +27,8 @@
       "category": "infra",
       "priority": "LOW",
       "status": "COMPLETED",
-      "dueDate": "2026-08-05"
+      "dueDate": "2026-08-05",
+      "priorityNumber": 1
     },
     {
       "id": "4",
@@ -34,16 +37,18 @@
       "category": "testing",
       "priority": "NONE",
       "status": "IN_PROGRESS",
-      "dueDate": "2026-08-22"
+      "dueDate": "2026-08-22",
+      "priorityNumber": 0
     },
     {
       "id": "5",
       "title": "設計メモ整理",
       "description": "実装時の判断理由をドキュメントに残す",
       "category": "document",
-      "priority": "HIGH",
+      "priority": "LOW",
       "status": "CANCELED",
-      "dueDate": "2026-09-08"
+      "dueDate": "2026-09-08",
+      "priorityNumber": 1
     },
     {
       "id": "6",
@@ -52,7 +57,8 @@
       "category": "review",
       "priority": "MIDDLE",
       "status": "INITIATION",
-      "dueDate": "2026-09-25"
+      "dueDate": "2026-09-25",
+      "priorityNumber": 2
     },
     {
       "id": "7",
@@ -61,7 +67,8 @@
       "category": "design",
       "priority": "LOW",
       "status": "PENDING",
-      "dueDate": "2026-10-12"
+      "dueDate": "2026-10-12",
+      "priorityNumber": 1
     },
     {
       "id": "8",
@@ -70,7 +77,8 @@
       "category": "meeting",
       "priority": "NONE",
       "status": "COMPLETED",
-      "dueDate": "2026-10-29"
+      "dueDate": "2026-10-29",
+      "priorityNumber": 0
     },
     {
       "id": "9",
@@ -79,7 +87,8 @@
       "category": "front_end",
       "priority": "HIGH",
       "status": "PENDING",
-      "dueDate": "2026-07-17"
+      "dueDate": "2026-07-17",
+      "priorityNumber": 3
     },
     {
       "id": "10",
@@ -88,7 +97,8 @@
       "category": "back_end",
       "priority": "MIDDLE",
       "status": "COMPLETED",
-      "dueDate": "2026-08-03"
+      "dueDate": "2026-08-03",
+      "priorityNumber": 2
     },
     {
       "id": "11",
@@ -97,7 +107,8 @@
       "category": "infra",
       "priority": "LOW",
       "status": "IN_PROGRESS",
-      "dueDate": "2026-08-20"
+      "dueDate": "2026-08-20",
+      "priorityNumber": 1
     },
     {
       "id": "12",
@@ -106,7 +117,8 @@
       "category": "testing",
       "priority": "NONE",
       "status": "CANCELED",
-      "dueDate": "2026-09-06"
+      "dueDate": "2026-09-06",
+      "priorityNumber": 0
     },
     {
       "id": "13",
@@ -115,7 +127,8 @@
       "category": "document",
       "priority": "HIGH",
       "status": "INITIATION",
-      "dueDate": "2026-09-23"
+      "dueDate": "2026-09-23",
+      "priorityNumber": 3
     },
     {
       "id": "14",
@@ -124,7 +137,8 @@
       "category": "review",
       "priority": "MIDDLE",
       "status": "PENDING",
-      "dueDate": "2026-10-10"
+      "dueDate": "2026-10-10",
+      "priorityNumber": 2
     },
     {
       "id": "15",
@@ -133,7 +147,8 @@
       "category": "design",
       "priority": "LOW",
       "status": "COMPLETED",
-      "dueDate": "2026-10-27"
+      "dueDate": "2026-10-27",
+      "priorityNumber": 1
     },
     {
       "id": "16",
@@ -142,7 +157,8 @@
       "category": "meeting",
       "priority": "NONE",
       "status": "IN_PROGRESS",
-      "dueDate": "2026-07-15"
+      "dueDate": "2026-07-15",
+      "priorityNumber": 0
     },
     {
       "id": "17",
@@ -151,7 +167,8 @@
       "category": "front_end",
       "priority": "HIGH",
       "status": "COMPLETED",
-      "dueDate": "2026-08-01"
+      "dueDate": "2026-08-01",
+      "priorityNumber": 3
     },
     {
       "id": "18",
@@ -160,16 +177,18 @@
       "category": "back_end",
       "priority": "MIDDLE",
       "status": "IN_PROGRESS",
-      "dueDate": "2026-08-18"
+      "dueDate": "2026-08-18",
+      "priorityNumber": 2
     },
     {
       "id": "19",
       "title": "Docker環境作成 #3",
       "description": "開発環境をDocker Composeで起動できるようにする",
       "category": "infra",
-      "priority": "LOW",
+      "priority": "HIGH",
       "status": "CANCELED",
-      "dueDate": "2026-09-04"
+      "dueDate": "2026-09-04",
+      "priorityNumber": 3
     },
     {
       "id": "20",
@@ -178,7 +197,8 @@
       "category": "testing",
       "priority": "NONE",
       "status": "INITIATION",
-      "dueDate": "2026-09-21"
+      "dueDate": "2026-09-21",
+      "priorityNumber": 0
     },
     {
       "id": "21",
@@ -187,16 +207,18 @@
       "category": "document",
       "priority": "HIGH",
       "status": "PENDING",
-      "dueDate": "2026-10-08"
+      "dueDate": "2026-10-08",
+      "priorityNumber": 3
     },
     {
       "id": "22",
       "title": "テストコードレビュー #3",
       "description": "テストケースの不足や重複を確認する",
       "category": "review",
-      "priority": "MIDDLE",
+      "priority": "HIGH",
       "status": "COMPLETED",
-      "dueDate": "2026-10-25"
+      "dueDate": "2026-10-25",
+      "priorityNumber": 3
     },
     {
       "id": "23",
@@ -205,7 +227,8 @@
       "category": "design",
       "priority": "LOW",
       "status": "IN_PROGRESS",
-      "dueDate": "2026-07-13"
+      "dueDate": "2026-07-13",
+      "priorityNumber": 1
     },
     {
       "id": "24",
@@ -214,7 +237,8 @@
       "category": "meeting",
       "priority": "NONE",
       "status": "CANCELED",
-      "dueDate": "2026-07-30"
+      "dueDate": "2026-07-30",
+      "priorityNumber": 0
     },
     {
       "id": "25",
@@ -223,7 +247,8 @@
       "category": "front_end",
       "priority": "HIGH",
       "status": "IN_PROGRESS",
-      "dueDate": "2026-08-16"
+      "dueDate": "2026-08-16",
+      "priorityNumber": 3
     },
     {
       "id": "26",
@@ -232,7 +257,8 @@
       "category": "back_end",
       "priority": "MIDDLE",
       "status": "CANCELED",
-      "dueDate": "2026-09-02"
+      "dueDate": "2026-09-02",
+      "priorityNumber": 2
     },
     {
       "id": "27",
@@ -241,7 +267,8 @@
       "category": "infra",
       "priority": "LOW",
       "status": "INITIATION",
-      "dueDate": "2026-09-19"
+      "dueDate": "2026-09-19",
+      "priorityNumber": 1
     },
     {
       "id": "28",
@@ -250,7 +277,8 @@
       "category": "testing",
       "priority": "NONE",
       "status": "PENDING",
-      "dueDate": "2026-10-06"
+      "dueDate": "2026-10-06",
+      "priorityNumber": 0
     },
     {
       "id": "29",
@@ -259,7 +287,8 @@
       "category": "document",
       "priority": "HIGH",
       "status": "COMPLETED",
-      "dueDate": "2026-10-23"
+      "dueDate": "2026-10-23",
+      "priorityNumber": 3
     },
     {
       "id": "30",
@@ -268,7 +297,8 @@
       "category": "review",
       "priority": "MIDDLE",
       "status": "IN_PROGRESS",
-      "dueDate": "2026-07-11"
+      "dueDate": "2026-07-11",
+      "priorityNumber": 2
     },
     {
       "id": "31",
@@ -277,7 +307,8 @@
       "category": "design",
       "priority": "LOW",
       "status": "CANCELED",
-      "dueDate": "2026-07-28"
+      "dueDate": "2026-07-28",
+      "priorityNumber": 1
     },
     {
       "id": "32",
@@ -286,7 +317,8 @@
       "category": "meeting",
       "priority": "NONE",
       "status": "INITIATION",
-      "dueDate": "2026-08-14"
+      "dueDate": "2026-08-14",
+      "priorityNumber": 0
     },
     {
       "id": "33",
@@ -295,7 +327,8 @@
       "category": "front_end",
       "priority": "HIGH",
       "status": "CANCELED",
-      "dueDate": "2026-08-31"
+      "dueDate": "2026-08-31",
+      "priorityNumber": 3
     },
     {
       "id": "34",
@@ -304,7 +337,8 @@
       "category": "back_end",
       "priority": "MIDDLE",
       "status": "INITIATION",
-      "dueDate": "2026-09-17"
+      "dueDate": "2026-09-17",
+      "priorityNumber": 2
     },
     {
       "id": "35",
@@ -313,7 +347,8 @@
       "category": "infra",
       "priority": "LOW",
       "status": "PENDING",
-      "dueDate": "2026-10-04"
+      "dueDate": "2026-10-04",
+      "priorityNumber": 1
     },
     {
       "id": "36",
@@ -322,7 +357,8 @@
       "category": "testing",
       "priority": "NONE",
       "status": "COMPLETED",
-      "dueDate": "2026-10-21"
+      "dueDate": "2026-10-21",
+      "priorityNumber": 0
     },
     {
       "id": "37",
@@ -331,7 +367,8 @@
       "category": "document",
       "priority": "HIGH",
       "status": "IN_PROGRESS",
-      "dueDate": "2026-07-09"
+      "dueDate": "2026-07-09",
+      "priorityNumber": 3
     },
     {
       "id": "38",
@@ -340,7 +377,8 @@
       "category": "review",
       "priority": "MIDDLE",
       "status": "CANCELED",
-      "dueDate": "2026-07-26"
+      "dueDate": "2026-07-26",
+      "priorityNumber": 2
     },
     {
       "id": "39",
@@ -349,7 +387,8 @@
       "category": "design",
       "priority": "LOW",
       "status": "INITIATION",
-      "dueDate": "2026-08-12"
+      "dueDate": "2026-08-12",
+      "priorityNumber": 1
     },
     {
       "id": "40",
@@ -358,7 +397,8 @@
       "category": "meeting",
       "priority": "NONE",
       "status": "PENDING",
-      "dueDate": "2026-08-29"
+      "dueDate": "2026-08-29",
+      "priorityNumber": 0
     },
     {
       "id": "41",
@@ -367,7 +407,8 @@
       "category": "front_end",
       "priority": "HIGH",
       "status": "INITIATION",
-      "dueDate": "2026-09-15"
+      "dueDate": "2026-09-15",
+      "priorityNumber": 3
     },
     {
       "id": "42",
@@ -376,7 +417,8 @@
       "category": "back_end",
       "priority": "MIDDLE",
       "status": "PENDING",
-      "dueDate": "2026-10-02"
+      "dueDate": "2026-10-02",
+      "priorityNumber": 2
     },
     {
       "id": "43",
@@ -385,7 +427,8 @@
       "category": "infra",
       "priority": "LOW",
       "status": "COMPLETED",
-      "dueDate": "2026-10-19"
+      "dueDate": "2026-10-19",
+      "priorityNumber": 1
     },
     {
       "id": "44",
@@ -394,7 +437,8 @@
       "category": "testing",
       "priority": "NONE",
       "status": "IN_PROGRESS",
-      "dueDate": "2026-07-07"
+      "dueDate": "2026-07-07",
+      "priorityNumber": 0
     },
     {
       "id": "45",
@@ -403,7 +447,8 @@
       "category": "document",
       "priority": "HIGH",
       "status": "CANCELED",
-      "dueDate": "2026-07-24"
+      "dueDate": "2026-07-24",
+      "priorityNumber": 3
     },
     {
       "id": "46",
@@ -412,7 +457,8 @@
       "category": "review",
       "priority": "MIDDLE",
       "status": "INITIATION",
-      "dueDate": "2026-08-10"
+      "dueDate": "2026-08-10",
+      "priorityNumber": 2
     },
     {
       "id": "47",
@@ -421,7 +467,8 @@
       "category": "design",
       "priority": "LOW",
       "status": "PENDING",
-      "dueDate": "2026-08-27"
+      "dueDate": "2026-08-27",
+      "priorityNumber": 1
     },
     {
       "id": "48",
@@ -430,7 +477,8 @@
       "category": "meeting",
       "priority": "NONE",
       "status": "COMPLETED",
-      "dueDate": "2026-09-13"
+      "dueDate": "2026-09-13",
+      "priorityNumber": 0
     },
     {
       "id": "49",
@@ -439,7 +487,8 @@
       "category": "front_end",
       "priority": "HIGH",
       "status": "PENDING",
-      "dueDate": "2026-09-30"
+      "dueDate": "2026-09-30",
+      "priorityNumber": 3
     },
     {
       "id": "50",
@@ -448,7 +497,8 @@
       "category": "back_end",
       "priority": "MIDDLE",
       "status": "COMPLETED",
-      "dueDate": "2026-10-17"
+      "dueDate": "2026-10-17",
+      "priorityNumber": 2
     },
     {
       "id": "51",
@@ -457,7 +507,8 @@
       "category": "infra",
       "priority": "LOW",
       "status": "IN_PROGRESS",
-      "dueDate": "2026-07-05"
+      "dueDate": "2026-07-05",
+      "priorityNumber": 1
     },
     {
       "id": "52",
@@ -466,7 +517,8 @@
       "category": "testing",
       "priority": "NONE",
       "status": "CANCELED",
-      "dueDate": "2026-07-22"
+      "dueDate": "2026-07-22",
+      "priorityNumber": 0
     },
     {
       "id": "53",
@@ -475,7 +527,8 @@
       "category": "document",
       "priority": "HIGH",
       "status": "INITIATION",
-      "dueDate": "2026-08-08"
+      "dueDate": "2026-08-08",
+      "priorityNumber": 3
     },
     {
       "id": "54",
@@ -484,7 +537,8 @@
       "category": "review",
       "priority": "MIDDLE",
       "status": "PENDING",
-      "dueDate": "2026-08-25"
+      "dueDate": "2026-08-25",
+      "priorityNumber": 2
     },
     {
       "id": "55",
@@ -493,7 +547,8 @@
       "category": "design",
       "priority": "LOW",
       "status": "COMPLETED",
-      "dueDate": "2026-09-11"
+      "dueDate": "2026-09-11",
+      "priorityNumber": 1
     },
     {
       "id": "56",
@@ -502,7 +557,8 @@
       "category": "meeting",
       "priority": "NONE",
       "status": "IN_PROGRESS",
-      "dueDate": "2026-09-28"
+      "dueDate": "2026-09-28",
+      "priorityNumber": 0
     },
     {
       "id": "57",
@@ -511,7 +567,8 @@
       "category": "front_end",
       "priority": "HIGH",
       "status": "COMPLETED",
-      "dueDate": "2026-10-15"
+      "dueDate": "2026-10-15",
+      "priorityNumber": 3
     },
     {
       "id": "58",
@@ -520,7 +577,8 @@
       "category": "back_end",
       "priority": "MIDDLE",
       "status": "IN_PROGRESS",
-      "dueDate": "2026-07-03"
+      "dueDate": "2026-07-03",
+      "priorityNumber": 2
     },
     {
       "id": "59",
@@ -529,7 +587,8 @@
       "category": "infra",
       "priority": "LOW",
       "status": "CANCELED",
-      "dueDate": "2026-07-20"
+      "dueDate": "2026-07-20",
+      "priorityNumber": 1
     },
     {
       "id": "60",
@@ -538,7 +597,8 @@
       "category": "testing",
       "priority": "NONE",
       "status": "INITIATION",
-      "dueDate": "2026-08-06"
+      "dueDate": "2026-08-06",
+      "priorityNumber": 0
     },
     {
       "id": "61",
@@ -547,7 +607,8 @@
       "category": "document",
       "priority": "HIGH",
       "status": "PENDING",
-      "dueDate": "2026-08-23"
+      "dueDate": "2026-08-23",
+      "priorityNumber": 3
     },
     {
       "id": "62",
@@ -556,7 +617,8 @@
       "category": "review",
       "priority": "MIDDLE",
       "status": "COMPLETED",
-      "dueDate": "2026-09-09"
+      "dueDate": "2026-09-09",
+      "priorityNumber": 2
     },
     {
       "id": "63",
@@ -565,7 +627,8 @@
       "category": "design",
       "priority": "LOW",
       "status": "IN_PROGRESS",
-      "dueDate": "2026-09-26"
+      "dueDate": "2026-09-26",
+      "priorityNumber": 1
     },
     {
       "id": "64",
@@ -574,7 +637,8 @@
       "category": "meeting",
       "priority": "NONE",
       "status": "CANCELED",
-      "dueDate": "2026-10-13"
+      "dueDate": "2026-10-13",
+      "priorityNumber": 0
     },
     {
       "id": "65",
@@ -583,7 +647,8 @@
       "category": "front_end",
       "priority": "HIGH",
       "status": "IN_PROGRESS",
-      "dueDate": "2026-10-30"
+      "dueDate": "2026-10-30",
+      "priorityNumber": 3
     },
     {
       "id": "66",
@@ -592,7 +657,8 @@
       "category": "back_end",
       "priority": "MIDDLE",
       "status": "CANCELED",
-      "dueDate": "2026-07-18"
+      "dueDate": "2026-07-18",
+      "priorityNumber": 2
     },
     {
       "id": "67",
@@ -601,7 +667,8 @@
       "category": "infra",
       "priority": "LOW",
       "status": "INITIATION",
-      "dueDate": "2026-08-04"
+      "dueDate": "2026-08-04",
+      "priorityNumber": 1
     },
     {
       "id": "68",
@@ -610,16 +677,18 @@
       "category": "testing",
       "priority": "NONE",
       "status": "PENDING",
-      "dueDate": "2026-08-21"
+      "dueDate": "2026-08-21",
+      "priorityNumber": 0
     },
     {
       "id": "69",
       "title": "API仕様書作成 #9",
       "description": "エンドポイントとレスポンス例をまとめる",
       "category": "document",
-      "priority": "HIGH",
-      "status": "COMPLETED",
-      "dueDate": "2026-09-07"
+      "priority": "LOW",
+      "status": "PENDING",
+      "dueDate": "2026-09-07",
+      "priorityNumber": 1
     },
     {
       "id": "70",
@@ -628,7 +697,8 @@
       "category": "review",
       "priority": "MIDDLE",
       "status": "IN_PROGRESS",
-      "dueDate": "2026-09-24"
+      "dueDate": "2026-09-24",
+      "priorityNumber": 2
     },
     {
       "id": "71",
@@ -637,7 +707,8 @@
       "category": "design",
       "priority": "LOW",
       "status": "CANCELED",
-      "dueDate": "2026-10-11"
+      "dueDate": "2026-10-11",
+      "priorityNumber": 1
     },
     {
       "id": "72",
@@ -646,7 +717,8 @@
       "category": "meeting",
       "priority": "NONE",
       "status": "INITIATION",
-      "dueDate": "2026-10-28"
+      "dueDate": "2026-10-28",
+      "priorityNumber": 0
     },
     {
       "id": "73",
@@ -655,7 +727,8 @@
       "category": "front_end",
       "priority": "HIGH",
       "status": "CANCELED",
-      "dueDate": "2026-07-16"
+      "dueDate": "2026-07-16",
+      "priorityNumber": 3
     },
     {
       "id": "74",
@@ -664,7 +737,8 @@
       "category": "back_end",
       "priority": "MIDDLE",
       "status": "INITIATION",
-      "dueDate": "2026-08-02"
+      "dueDate": "2026-08-02",
+      "priorityNumber": 2
     },
     {
       "id": "75",
@@ -673,7 +747,8 @@
       "category": "infra",
       "priority": "LOW",
       "status": "PENDING",
-      "dueDate": "2026-08-19"
+      "dueDate": "2026-08-19",
+      "priorityNumber": 1
     },
     {
       "id": "76",
@@ -682,7 +757,8 @@
       "category": "testing",
       "priority": "NONE",
       "status": "COMPLETED",
-      "dueDate": "2026-09-05"
+      "dueDate": "2026-09-05",
+      "priorityNumber": 0
     },
     {
       "id": "77",
@@ -691,7 +767,8 @@
       "category": "document",
       "priority": "HIGH",
       "status": "IN_PROGRESS",
-      "dueDate": "2026-09-22"
+      "dueDate": "2026-09-22",
+      "priorityNumber": 3
     },
     {
       "id": "78",
@@ -700,7 +777,8 @@
       "category": "review",
       "priority": "MIDDLE",
       "status": "CANCELED",
-      "dueDate": "2026-10-09"
+      "dueDate": "2026-10-09",
+      "priorityNumber": 2
     },
     {
       "id": "79",
@@ -709,7 +787,8 @@
       "category": "design",
       "priority": "LOW",
       "status": "INITIATION",
-      "dueDate": "2026-10-26"
+      "dueDate": "2026-10-26",
+      "priorityNumber": 1
     },
     {
       "id": "80",
@@ -718,7 +797,8 @@
       "category": "meeting",
       "priority": "NONE",
       "status": "PENDING",
-      "dueDate": "2026-07-14"
+      "dueDate": "2026-07-14",
+      "priorityNumber": 0
     },
     {
       "id": "81",
@@ -727,7 +807,8 @@
       "category": "front_end",
       "priority": "HIGH",
       "status": "INITIATION",
-      "dueDate": "2026-07-31"
+      "dueDate": "2026-07-31",
+      "priorityNumber": 3
     },
     {
       "id": "82",
@@ -736,7 +817,8 @@
       "category": "back_end",
       "priority": "MIDDLE",
       "status": "PENDING",
-      "dueDate": "2026-08-17"
+      "dueDate": "2026-08-17",
+      "priorityNumber": 2
     },
     {
       "id": "83",
@@ -745,7 +827,8 @@
       "category": "infra",
       "priority": "LOW",
       "status": "COMPLETED",
-      "dueDate": "2026-09-03"
+      "dueDate": "2026-09-03",
+      "priorityNumber": 1
     },
     {
       "id": "84",
@@ -754,7 +837,8 @@
       "category": "testing",
       "priority": "NONE",
       "status": "IN_PROGRESS",
-      "dueDate": "2026-09-20"
+      "dueDate": "2026-09-20",
+      "priorityNumber": 0
     },
     {
       "id": "85",
@@ -763,7 +847,8 @@
       "category": "document",
       "priority": "HIGH",
       "status": "CANCELED",
-      "dueDate": "2026-10-07"
+      "dueDate": "2026-10-07",
+      "priorityNumber": 3
     },
     {
       "id": "86",
@@ -772,7 +857,8 @@
       "category": "review",
       "priority": "MIDDLE",
       "status": "INITIATION",
-      "dueDate": "2026-10-24"
+      "dueDate": "2026-10-24",
+      "priorityNumber": 2
     },
     {
       "id": "87",
@@ -781,7 +867,8 @@
       "category": "design",
       "priority": "LOW",
       "status": "PENDING",
-      "dueDate": "2026-07-12"
+      "dueDate": "2026-07-12",
+      "priorityNumber": 1
     },
     {
       "id": "88",
@@ -790,7 +877,8 @@
       "category": "meeting",
       "priority": "NONE",
       "status": "COMPLETED",
-      "dueDate": "2026-07-29"
+      "dueDate": "2026-07-29",
+      "priorityNumber": 0
     },
     {
       "id": "89",
@@ -799,7 +887,8 @@
       "category": "front_end",
       "priority": "HIGH",
       "status": "PENDING",
-      "dueDate": "2026-08-15"
+      "dueDate": "2026-08-15",
+      "priorityNumber": 3
     },
     {
       "id": "90",
@@ -808,7 +897,8 @@
       "category": "back_end",
       "priority": "MIDDLE",
       "status": "COMPLETED",
-      "dueDate": "2026-09-01"
+      "dueDate": "2026-09-01",
+      "priorityNumber": 2
     },
     {
       "id": "91",
@@ -817,7 +907,8 @@
       "category": "infra",
       "priority": "LOW",
       "status": "IN_PROGRESS",
-      "dueDate": "2026-09-18"
+      "dueDate": "2026-09-18",
+      "priorityNumber": 1
     },
     {
       "id": "92",
@@ -826,7 +917,8 @@
       "category": "testing",
       "priority": "NONE",
       "status": "CANCELED",
-      "dueDate": "2026-10-05"
+      "dueDate": "2026-10-05",
+      "priorityNumber": 0
     },
     {
       "id": "93",
@@ -835,7 +927,8 @@
       "category": "document",
       "priority": "HIGH",
       "status": "INITIATION",
-      "dueDate": "2026-10-22"
+      "dueDate": "2026-10-22",
+      "priorityNumber": 3
     },
     {
       "id": "94",
@@ -844,7 +937,8 @@
       "category": "review",
       "priority": "MIDDLE",
       "status": "PENDING",
-      "dueDate": "2026-07-10"
+      "dueDate": "2026-07-10",
+      "priorityNumber": 2
     },
     {
       "id": "95",
@@ -853,7 +947,8 @@
       "category": "design",
       "priority": "LOW",
       "status": "COMPLETED",
-      "dueDate": "2026-07-27"
+      "dueDate": "2026-07-27",
+      "priorityNumber": 1
     },
     {
       "id": "96",
@@ -862,7 +957,8 @@
       "category": "meeting",
       "priority": "NONE",
       "status": "IN_PROGRESS",
-      "dueDate": "2026-08-13"
+      "dueDate": "2026-08-13",
+      "priorityNumber": 0
     },
     {
       "id": "97",
@@ -871,7 +967,8 @@
       "category": "front_end",
       "priority": "HIGH",
       "status": "COMPLETED",
-      "dueDate": "2026-08-30"
+      "dueDate": "2026-08-30",
+      "priorityNumber": 3
     },
     {
       "id": "98",
@@ -880,7 +977,8 @@
       "category": "back_end",
       "priority": "MIDDLE",
       "status": "IN_PROGRESS",
-      "dueDate": "2026-09-16"
+      "dueDate": "2026-09-16",
+      "priorityNumber": 2
     },
     {
       "id": "99",
@@ -889,7 +987,8 @@
       "category": "infra",
       "priority": "LOW",
       "status": "CANCELED",
-      "dueDate": "2026-10-03"
+      "dueDate": "2026-10-03",
+      "priorityNumber": 1
     },
     {
       "id": "100",
@@ -898,7 +997,8 @@
       "category": "testing",
       "priority": "NONE",
       "status": "INITIATION",
-      "dueDate": "2026-10-20"
+      "dueDate": "2026-10-20",
+      "priorityNumber": 0
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

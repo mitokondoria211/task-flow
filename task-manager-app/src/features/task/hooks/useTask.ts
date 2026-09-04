@@ -8,8 +8,12 @@ import {
   searchTasks,
   updateTask,
 } from "../../../lib/api/taskApi";
-import type { Priority, TaskInput } from "../../../lib/validations/task";
-import { expiredTask } from "../../../lib/task/expiredTask";
+import type {
+  PatchTaskInput,
+  Priority,
+  TaskInput,
+} from "../../../lib/validations/task";
+import { isExpiredTask } from "../../../lib/task/expiredTask";
 
 export const useTasks = (params: TaskSearchParams) => {
   return useQuery({
@@ -47,7 +51,7 @@ export const useUpdateTask = () => {
 
     onSuccess: () => {
       queryClient.invalidateQueries({
-        queryKey: ["tasks"],
+        queryKey: ["tasks", "list"],
       });
     },
   });
@@ -55,12 +59,12 @@ export const useUpdateTask = () => {
 export const usePatchTask = () => {
   const queryClient = useQueryClient();
   return useMutation({
-    mutationFn: ({ id, data }: { id: string; data: TaskInput }) =>
+    mutationFn: ({ id, data }: { id: string; data: PatchTaskInput }) =>
       patchTask(id, data),
 
-    onSuccess: () => {
-      queryClient.invalidateQueries({
-        queryKey: ["tasks"],
+    onSuccess: async () => {
+      await queryClient.invalidateQueries({
+        queryKey: ["tasks", "list"],
       });
     },
   });
@@ -87,51 +91,26 @@ export const useTasksByPriority = (
   const params: TaskSearchParams = { priority };
   const filterTasks = async () => {
     const tasks = await searchTasks(params);
-    if (isExpried) return tasks;
-    return tasks.filter((task) => !expiredTask(task, isCompleted));
+    if (!isCompleted && !isExpried) {
+      const filtered = tasks.filter(
+        (task) => task.status !== "COMPLETED" && !isExpiredTask(task),
+      );
+      return filtered;
+    }
+
+    if (!isCompleted && isExpried) {
+      return tasks.filter((task) => task.status !== "COMPLETED");
+    }
+
+    if (isCompleted && !isExpried) {
+      return tasks.filter((task) => !isExpiredTask(task));
+    }
+
+    return tasks;
   };
   return useQuery({
     queryKey: ["tasks", "list", priority, isCompleted, isExpried],
     queryFn: filterTasks,
-    retry: false,
-  });
-};
-export const useHighTask = (isExpried = false) => {
-  const params: TaskSearchParams = { priority: "HIGH" };
-  const highTasks = async () => {
-    const tasks = await searchTasks(params);
-    if (isExpried) return tasks;
-    return tasks.filter((task) => !expiredTask(task));
-  };
-  return useQuery({
-    queryKey: ["tasks", "list", "HIGH", isExpried],
-    queryFn: highTasks,
-    retry: false,
-  });
-};
-export const useMiddleTask = (isExpried = false) => {
-  const params: TaskSearchParams = { priority: "MIDDLE" };
-  const middleTasks = async () => {
-    const tasks = await searchTasks(params);
-    if (isExpried) return tasks;
-    return tasks.filter((task) => !expiredTask(task));
-  };
-  return useQuery({
-    queryKey: ["tasks", "list", "MIDDLE", isExpried],
-    queryFn: middleTasks,
-    retry: false,
-  });
-};
-export const useLowTask = (isExpried = false) => {
-  const params: TaskSearchParams = { priority: "LOW" };
-  const lowTasks = async () => {
-    const tasks = await searchTasks(params);
-    if (isExpried) return tasks;
-    return tasks.filter((task) => !expiredTask(task));
-  };
-  return useQuery({
-    queryKey: ["tasks", "list", "LOW", isExpried],
-    queryFn: lowTasks,
     retry: false,
   });
 };
