@@ -7,6 +7,7 @@ import { Switch } from "../components/ui/switch";
 import { Label } from "../components/ui/label";
 
 const DashBoard = () => {
+  const [none, setNone] = useState(false);
   const [completed, setCompleted] = useState(false);
   const [expired, setExpired] = useState(false);
   const { data: tasks } = useTasks({});
@@ -32,9 +33,14 @@ const DashBoard = () => {
         </div>
         <div className="flex gap-2">
           <div className="flex gap-2 items-center">
+            <Label>期限なし表示</Label>
+            <Switch checked={none} onCheckedChange={setNone} />
+          </div>
+          <div className="flex gap-2 items-center">
             <Label>完了表示</Label>
             <Switch checked={completed} onCheckedChange={setCompleted} />
           </div>
+
           <div className="flex gap-2 items-center">
             <Label>期限切れ表示</Label>
             <Switch checked={expired} onCheckedChange={setExpired} />
@@ -42,7 +48,7 @@ const DashBoard = () => {
         </div>
       </div>
 
-      <div className="grid border grid-cols-4 gap-4">
+      <div className={`grid border grid-cols-${none ? "4" : "3"} gap-4`}>
         <section className="flex flex-col gap-2 border">
           <h2 className="flex flex-col  text-center bg-red-400 text-white rounded-2xl py-1">
             高:{highTasks?.length}
@@ -73,16 +79,18 @@ const DashBoard = () => {
             ))}
           </div>
         </section>
-        <section className="flex flex-col gap-2 border">
-          <h2 className="text-center bg-gray-300 text-white rounded-2xl py-1">
-            なし:{noneTasks?.length}
-          </h2>
-          <div className="flex flex-col gap-2 bg-gray-200-200 p-4 items-center">
-            {noneTasks?.map((task) => (
-              <TaskCard task={task} isEdit={false} isClick={false} />
-            ))}
-          </div>
-        </section>
+        {none && (
+          <section className="flex flex-col gap-2 border">
+            <h2 className="text-center bg-gray-300 text-white rounded-2xl py-1">
+              なし:{noneTasks?.length}
+            </h2>
+            <div className="flex flex-col gap-2 bg-gray-200-200 p-4 items-center">
+              {noneTasks?.map((task) => (
+                <TaskCard task={task} isEdit={false} isClick={false} />
+              ))}
+            </div>
+          </section>
+        )}
       </div>
     </div>
   );

@@ -23,8 +23,10 @@ import {
   Calendar,
   Circle,
   EllipsisVertical,
+  Pencil,
   PencilIcon,
   Tag,
+  Trash2,
 } from "lucide-react";
 import DeleteDialog from "./DeleteDialog";
 import { isDueSoon, isExpiredTask } from "../../lib/task/expiredTask";
@@ -39,6 +41,14 @@ import {
   SelectTrigger,
   SelectValue,
 } from "../ui/select";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "../ui/dropdown-menu";
+import { useState } from "react";
 
 type TaskCardProps = {
   task: Task;
@@ -53,6 +63,7 @@ const TaskCard = ({
   isDetail = false,
   isClick = true,
 }: TaskCardProps) => {
+  const [deleteOpen, setDeleteOpen] = useState(false);
   const navigate = useNavigate();
   const deleteMutation = useDeleteTask();
   const patchMutation = usePatchTask();
@@ -162,7 +173,49 @@ const TaskCard = ({
               {categoryLabels[task.category]}
             </Badge>
 
-            <EllipsisVertical />
+            <DropdownMenu>
+              <DropdownMenuTrigger
+                render={
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <EllipsisVertical />
+                  </Button>
+                }
+              ></DropdownMenuTrigger>
+
+              <DropdownMenuContent>
+                <DropdownMenuItem
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    navigate(`/tasks/${task.id}/edit`);
+                  }}
+                >
+                  <Pencil />
+                  編集
+                </DropdownMenuItem>
+
+                <DropdownMenuSeparator />
+
+                <DropdownMenuItem
+                  variant="destructive"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setDeleteOpen(true);
+                  }}
+                >
+                  <Trash2 />
+                  削除
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+            <DeleteDialog
+              open={deleteOpen}
+              onOpenChange={setDeleteOpen}
+              onDelete={handleDelete}
+            />
           </div>
         </CardTitle>
         <CardAction className="flex gap-2">
@@ -186,10 +239,6 @@ const TaskCard = ({
               >
                 <PencilIcon aria-hidden="true" />
               </Button>
-              <DeleteDialog
-                aria-label={`${task.title}を削除`}
-                onDelete={handleDelete}
-              />
             </>
           )}
         </CardAction>

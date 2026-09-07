@@ -1,4 +1,3 @@
-import { Trash2 } from "lucide-react";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -8,30 +7,17 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
-  AlertDialogTrigger,
 } from "../ui/alert-dialog";
-import { Button } from "../ui/button";
 
 type DeleteDialogProps = {
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
   onDelete: () => void;
 };
 
-const DeleteDialog = ({ onDelete }: DeleteDialogProps) => {
+const DeleteDialog = ({ open, onOpenChange, onDelete }: DeleteDialogProps) => {
   return (
-    <AlertDialog>
-      <AlertDialogTrigger
-        render={
-          <Button
-            variant="destructive"
-            size="icon"
-            onClick={(e) => {
-              e.stopPropagation();
-            }}
-          >
-            <Trash2 aria-hidden="true" />
-          </Button>
-        }
-      ></AlertDialogTrigger>
+    <AlertDialog open={open} onOpenChange={onOpenChange}>
       <AlertDialogContent
         onClick={(e) => {
           e.stopPropagation();
